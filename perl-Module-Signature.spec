@@ -6,10 +6,12 @@
 %define	pdir	Module
 %define	pnam	Signature
 Summary:	Module signature file manipulation
+Summary(pl):	Obróbka pliku sygnatury modu³u
 Name:		perl-Module-Signature
 Version:	0.36
 Release:	1
-License:	Same as Perl Itself
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	92ac8341cc6973edb700fae476b0ffc1
@@ -26,6 +28,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Module::Signature adds cryptographic authentications to CPAN
 distributions, via the special SIGNATURE file.
+
+%description -l pl
+Module::Signature dodaje uwierzytelnianie kryptograficzne do
+dystrybucji CPAN poprzez specjalny plik SIGNATURE.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -51,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%attr(755,root,root) %{_bindir}/cpansign
 %{perl_vendorlib}/Module/*
 %{_mandir}/man3/*
 %{_mandir}/man1/*
-%attr(755,root,root) %{_bindir}/cpansign
