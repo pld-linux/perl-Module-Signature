@@ -43,7 +43,11 @@ echo n | %{__perl} Makefile.PL \
 
 %{__make}
 
-%{?with_tests:%{__make} test}
+%if %{with tests}
+# ugly?
+mkdir -p ~/.gnupg
+%{__make} test
+%endif 
 
 %install
 rm -rf $RPM_BUILD_ROOT
