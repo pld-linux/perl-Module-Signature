@@ -8,13 +8,13 @@
 Summary:	Module signature file manipulation
 Summary(pl):	Obróbka pliku sygnatury modu³u
 Name:		perl-Module-Signature
-Version:	0.36
+Version:	0.37
 Release:	1
 # same as perl
 License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	92ac8341cc6973edb700fae476b0ffc1
+# Source0-md5:	6f4c80acffc74b96750dcf923e8adf57
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
