@@ -37,7 +37,7 @@ dystrybucji CPAN poprzez specjalny plik SIGNATURE.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo 3 | %{__perl} Makefile.PL \
+%{__perl} Makefile.PL \
 	INSTALLDIRS=vendor \
 	--skipdeps
 
