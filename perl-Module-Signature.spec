@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Module
-%define	pnam	Signature
+%define		pdir	Module
+%define		pnam	Signature
 Summary:	Module::Signature - module signature file manipulation
 Summary(pl):	Module::Signature - obróbka pliku sygnatury modu³u
 Name:		perl-Module-Signature
