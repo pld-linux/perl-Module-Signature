@@ -1,12 +1,12 @@
-
+#
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
 %define	pnam	Signature
-Summary:	Module signature file manipulation
-Summary(pl):	Obróbka pliku sygnatury modu³u
+Summary:	Module::Signature - Module signature file manipulation
+Summary(pl):	Module::Signature - Obróbka pliku sygnatury modu³u
 Name:		perl-Module-Signature
 Version:	0.38
 Release:	1
@@ -15,13 +15,13 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	679660f7a4ca7fa2a95a8167824b8024
-BuildRequires:	perl-devel >= 5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+# gnupg or Crypt::OpenPGP
+BuildRequires:	gnupg
 %if %{with tests}
 BuildRequires:	perl-Digest-SHA1
 %endif
-# gnupg or Crypt::OpenPGP
-BuildRequires:	gnupg
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -58,6 +58,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %attr(755,root,root) %{_bindir}/cpansign
-%{perl_vendorlib}/%{pdir}/*
+%{perl_vendorlib}/Module/Signature.pm
 %{_mandir}/man3/*
 %{_mandir}/man1/*
