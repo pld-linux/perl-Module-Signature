@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Module
 %define	pnam	Signature
-Summary:	Module::Signature - Module signature file manipulation
-Summary(pl):	Module::Signature - Obróbka pliku sygnatury modu³u
+Summary:	Module::Signature - module signature file manipulation
+Summary(pl):	Module::Signature - obróbka pliku sygnatury modu³u
 Name:		perl-Module-Signature
 Version:	0.38
 Release:	1
