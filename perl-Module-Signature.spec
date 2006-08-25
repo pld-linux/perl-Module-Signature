@@ -18,6 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # gnupg or Crypt::OpenPGP
 BuildRequires:	gnupg
 %if %{with tests}
+BuildRequires:	gnupg-plugin-keys_hkp
 BuildRequires:	perl-Digest-SHA1
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
