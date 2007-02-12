@@ -6,7 +6,7 @@
 %define		pdir	Module
 %define		pnam	Signature
 Summary:	Module::Signature - module signature file manipulation
-Summary(pl):	Module::Signature - obrÛbka pliku sygnatury modu≥u
+Summary(pl.UTF-8):   Module::Signature - obr√≥bka pliku sygnatury modu≈Çu
 Name:		perl-Module-Signature
 Version:	0.53
 Release:	1
@@ -30,7 +30,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Module::Signature adds cryptographic authentications to CPAN
 distributions, via the special SIGNATURE file.
 
-%description -l pl
+%description -l pl.UTF-8
 Module::Signature dodaje uwierzytelnianie kryptograficzne do
 dystrybucji CPAN poprzez specjalny plik SIGNATURE.
 
