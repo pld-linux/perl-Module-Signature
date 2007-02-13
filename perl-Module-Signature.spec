@@ -6,7 +6,7 @@
 %define		pdir	Module
 %define		pnam	Signature
 Summary:	Module::Signature - module signature file manipulation
-Summary(pl.UTF-8):   Module::Signature - obróbka pliku sygnatury modułu
+Summary(pl.UTF-8):	Module::Signature - obróbka pliku sygnatury modułu
 Name:		perl-Module-Signature
 Version:	0.53
 Release:	1
