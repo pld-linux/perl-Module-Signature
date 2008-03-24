@@ -13,8 +13,9 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0e2571a76c4bf37d61d9f24d71afbd77
+URL:		http://search.cpan.org/dist/Module-Signature/
 # gnupg or Crypt::OpenPGP
 BuildRequires:	gnupg
 %if %{with tests}
