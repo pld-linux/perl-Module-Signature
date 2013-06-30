@@ -8,13 +8,13 @@
 Summary:	Module::Signature - module signature file manipulation
 Summary(pl.UTF-8):	Module::Signature - obróbka pliku sygnatury modułu
 Name:		perl-Module-Signature
-Version:	0.68
+Version:	0.73
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c63c0b5c4e7162fc0c44512e1f832e5e
+# Source0-md5:	de27bbca948ba8a13a7f614414cb623d
 URL:		http://search.cpan.org/dist/Module-Signature/
 # gnupg or Crypt::OpenPGP
 BuildRequires:	gnupg
@@ -62,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc AUTHORS Changes README
 %attr(755,root,root) %{_bindir}/cpansign
 %{perl_vendorlib}/Module/Signature.pm
-%{_mandir}/man3/*
-%{_mandir}/man1/*
+%{_mandir}/man1/cpansign.1p*
+%{_mandir}/man3/Module::Signature.3pm*
