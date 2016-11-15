@@ -8,13 +8,13 @@
 Summary:	Module::Signature - module signature file manipulation
 Summary(pl.UTF-8):	Module::Signature - obróbka pliku sygnatury modułu
 Name:		perl-Module-Signature
-Version:	0.73
+Version:	0.81
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Module/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	de27bbca948ba8a13a7f614414cb623d
+# Source0-md5:	cdc79f58ac56612edace3116c2805b97
 URL:		http://search.cpan.org/dist/Module-Signature/
 # gnupg or Crypt::OpenPGP
 BuildRequires:	gnupg
