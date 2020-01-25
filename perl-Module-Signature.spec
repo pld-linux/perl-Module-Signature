@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (uses network)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Module
 %define		pnam	Signature
 Summary:	Module::Signature - module signature file manipulation
